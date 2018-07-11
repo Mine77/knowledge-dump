@@ -242,3 +242,10 @@ If the files already in git cache, they won't be removed after you change ignore
 `git commit -m 'make .gitignore working'` commit changes into cache.  
 
 If all files in a directory are set as ignored in the .gitignore, this directory will be ignored. Git will not add an empty directory.  
+
+
+## FAQ
+#### On mac os, git is set to be case non-sensitive by default, how to fix that?
+```
+git config core.ignorecase false
+```
